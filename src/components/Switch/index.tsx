@@ -3,7 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 import { useThemeContext } from "@/context/ThemeContext";
-//import "./Switch.css";
+import styles from "./styles.module.css";
 
 export default function Switch() {
   const themeContext = useThemeContext();
@@ -24,7 +24,7 @@ export default function Switch() {
 
   return (
     <div
-      className="switch"
+      className={styles.switch}
       role="switch"
       aria-checked={themeContext.theme === "light" ? false : true}
       onPointerDown={(event) => {
@@ -48,16 +48,16 @@ export default function Switch() {
       }}
       tabIndex={0}
     >
-      <div className="switch__icons">
-        <span className="switch__icon">
-          <FontAwesomeIcon icon={faMoon} className="switch__icon" />
+      <div className={styles.switchIcons}>
+        <span className={styles.switchIcon}>
+          <FontAwesomeIcon icon={faMoon} className={styles.switchIcon} />
         </span>
-        <span className="switch__icon">
-          <FontAwesomeIcon icon={faSun} className="switch__icon" />
+        <span className={styles.switchIcon}>
+          <FontAwesomeIcon icon={faSun} className={styles.switchIcon} />
         </span>
       </div>
       <span
-        className="switch-controler"
+        className={styles.switchControler}
         title="Controlador esquema de cores usado neste site"
         tabIndex={0}
       ></span>
