@@ -9,7 +9,6 @@
   background-color: var(--choose01);
   position: relative;
   border-radius: 22px;
-  margin: 0 15px 0 0;
 }
 
 .switch:focus .switchControler,
