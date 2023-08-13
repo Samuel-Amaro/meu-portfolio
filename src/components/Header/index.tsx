@@ -12,13 +12,20 @@ import {
 import Switch from "../Switch";
 import Link from "next/link";
 import styles from "./styles.module.css";
-
-export type DataOptionsFocus = "first" | "last";
-
-//TODO: USAR MENU DO LINKEDLND COMO EXPIRAÇÃO
-//TODO: ADD STYLES
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function Header() {
+  //searchparams acionara nova renderizações
+  const searchParams = useSearchParams();
+
+  const [currentHash, setCurrentHash] = useState(window.location.hash);
+
+  useEffect(() => {
+    //a cada nova re-renderização acionada por params, obtemos o hash atualizado
+    setCurrentHash(window.location.hash);
+  }, [searchParams]);
+
   return (
     <header className={styles.header}>
       <FontAwesomeIcon
@@ -27,13 +34,20 @@ export default function Header() {
         height={30}
         className={styles.headerLogo}
       />
-      <nav className={styles.headerNav}>
+      <nav className={styles.headerNav} aria-label="Navegação Principal">
         <ul className={styles.headerList}>
           <li>
             <Link
               href="#sobre"
-              title="Section Sobre"
-              className={styles.headerNavLink}
+              target="_self"
+              rel="next"
+              title="Seção Sobre"
+              className={
+                currentHash === "#sobre"
+                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
+                  : styles.headerNavLink
+              }
+              aria-current={currentHash === "#sobre"}
             >
               <FontAwesomeIcon
                 icon={faUser}
@@ -45,8 +59,15 @@ export default function Header() {
           <li>
             <Link
               href="#experiencia"
-              title="Section Experiência"
-              className={styles.headerNavLink}
+              target="_self"
+              rel="next"
+              title="Seção Experiência"
+              className={
+                currentHash === "#experiencia"
+                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
+                  : styles.headerNavLink
+              }
+              aria-current={currentHash === "#experiencia"}
             >
               <FontAwesomeIcon
                 icon={faFile}
@@ -58,8 +79,15 @@ export default function Header() {
           <li>
             <Link
               href="#educacao"
-              title="Section Educação"
-              className={styles.headerNavLink}
+              target="_self"
+              rel="next"
+              title="Seção Educação"
+              className={
+                currentHash === "#educacao"
+                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
+                  : styles.headerNavLink
+              }
+              aria-current={currentHash === "#educacao"}
             >
               <FontAwesomeIcon
                 icon={faUserGraduate}
@@ -71,8 +99,15 @@ export default function Header() {
           <li>
             <Link
               href="#skills"
-              title="Section Skills"
-              className={styles.headerNavLink}
+              target="_self"
+              rel="next"
+              title="Seção Skills"
+              className={
+                currentHash === "#skills"
+                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
+                  : styles.headerNavLink
+              }
+              aria-current={currentHash === "#skills"}
             >
               <FontAwesomeIcon
                 icon={faClipboardList}
@@ -84,8 +119,15 @@ export default function Header() {
           <li>
             <Link
               href="#interesses"
-              title="Section Interesses"
-              className={styles.headerNavLink}
+              target="_self"
+              rel="next"
+              title="Seção Interesses"
+              className={
+                currentHash === "#interesses"
+                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
+                  : styles.headerNavLink
+              }
+              aria-current={currentHash === "#interesses"}
             >
               <FontAwesomeIcon
                 icon={faList}
@@ -97,8 +139,15 @@ export default function Header() {
           <li>
             <Link
               href="#projetos"
-              title="Section Projetos"
-              className={styles.headerNavLink}
+              target="_self"
+              rel="next"
+              title="Seção Projetos"
+              className={
+                currentHash === "#projetos"
+                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
+                  : styles.headerNavLink
+              }
+              aria-current={currentHash === "#projetos"}
             >
               <FontAwesomeIcon
                 icon={faCode}
