@@ -1,0 +1,181 @@
+.sectionName {
+  text-transform: uppercase;
+}
+
+.sectionNameColor {
+  color: var(--choose09);
+}
+
+.sectionDatas {
+  font-family: var(--font-saira-extra-condensed);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.15rem;
+  margin: 0 0 24px 0;
+}
+
+.sectionLink {
+  color: var(--choose10);
+}
+
+.sectionLink:is(:hover, :focus) {
+  color: var(--choose11);
+}
+
+.sectionDescription {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 0 24px 0;
+}
+
+.sectionList {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 24px;
+  margin: 0 0 24px 0;
+}
+
+.sectionItemLink {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--bs-gray-700);
+}
+
+.sectionItemLink:is(:hover, :focus) .sectionItemLinkIcon {
+  color: var(--choose12);
+  fill: var(--choose12);
+}
+
+.sectionItemLinkIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: var(--bs-gray-700);
+  fill: var(--bs-gray-700);
+}
+
+.sectionBtn {
+  display: block;
+  background-color: var(--bs-gray-700);
+  color: white;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.7rem 0.5rem;
+  width: min-content;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.sectionBtn:is(:hover, :focus) {
+  background-color: var(--choose12);
+}
+
+.sectionContainerDatas {
+  margin: 0 0 24px 0;
+}
+
+.sectionContainerProfile {
+  max-width: 230px;
+  /*350px - desktop*/
+  max-height: 300px;
+  /*400px - desktop*/
+  margin: 0 auto 24px auto;
+}
+
+.sectionCamadaBg {
+  background-color: var(--color03);
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 16px;
+  transform: rotate(-9.545deg);
+  z-index: auto;
+}
+
+.sectionCamadaLayer {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  background-color: var(--color08);
+  transform: rotate(9.545deg);
+  border-radius: 16px;
+  z-index: 2;
+}
+
+.sectionProfile {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: min-content;
+  height: min-content;
+  border-radius: 16px;
+}
+
+.sectionPresentation {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 7.5px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.sectionRectangule {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: var(--color10);
+}
+
+.sectionPresentationText {
+  color: var(--color09);
+}
+
+@media screen and (min-width: 800px) {
+  .sectionDatas {
+    font-size: 1.2rem;
+  }
+
+  .sectionDescription {
+    font-size: 1.05rem;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: minmax(min-content, 850px) minmax(min-content, 350px);/*minmax(min-content, 850px) minmax(min-content, 350px)*/
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 0 auto 0 auto;
+  }
+
+  .sectionContainerDatas {
+    margin: 0;
+  }
+
+  .sectionContainerProfile {
+    max-width: 350px;
+    max-height: 400px;
+    margin: 0 auto 0 auto;
+  }
+
+  .sectionItemLinkIcon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    gap: 150px;
+  }
+}
