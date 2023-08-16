@@ -1,0 +1,32 @@
+.sectionEducationTitle,
+.sectionEducationCargo,
+.sectionEducationEmpresa {
+  text-transform: uppercase;
+}
+
+.sectionEducationDescription,
+.sectionEducationEmpresa {
+  margin: 0 0 16px 0;
+}
+
+.sectionEducationDescription {
+  line-height: 1.5;
+}
+
+.sectionEducationdate {
+  color: var(--choose10);
+}
+
+@media screen and (min-width: 800px) {
+  .sectionEducationContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .sectionEducationDescription {
+    margin: 0;
+  }
+}
