@@ -150,7 +150,7 @@ export default function SectionAbout() {
     </>
   );
   return (
-    <section className={`section ${styles.section}`}>
+    <section className={`section ${styles.section}`} id="sobre">
       {useMatchMedia({
         mobileContent: mobileContent,
         desktopContent: desktopContent,
