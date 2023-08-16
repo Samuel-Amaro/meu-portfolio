@@ -1,0 +1,32 @@
+.sectionExperienceTitle,
+.sectionExperienceCargo,
+.sectionExperienceEmpresa {
+  text-transform: uppercase;
+}
+
+.sectionExperienceDescription,
+.sectionExperienceEmpresa {
+  margin: 0 0 16px 0;
+}
+
+.sectionExperienceDescription {
+  line-height: 1.5;
+}
+
+.sectionExperiencedate {
+  color: var(--choose10);
+}
+
+@media screen and (min-width: 800px) {
+  .sectionExperienceContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .sectionExperienceDescription {
+    margin: 0;
+  }
+}
