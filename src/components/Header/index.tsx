@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCode,
   faUser,
-  faFile,
   faUserGraduate,
   faClipboardList,
   faList,
@@ -54,26 +53,6 @@ export default function Header() {
                 className={styles.headerNavLinkIcon}
               />
               <span className={styles.headerTextLink}>Sobre</span>
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="#experiencia"
-              target="_self"
-              rel="next"
-              title="Seção Experiência"
-              className={
-                currentHash === "#experiencia"
-                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
-                  : styles.headerNavLink
-              }
-              aria-current={currentHash === "#experiencia"}
-            >
-              <FontAwesomeIcon
-                icon={faFile}
-                className={styles.headerNavLinkIcon}
-              />
-              <span className={styles.headerTextLink}>Experiência</span>
             </Link>
           </li>
           <li>
