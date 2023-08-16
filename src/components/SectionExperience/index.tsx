@@ -1,11 +1,8 @@
 import styles from "./styles.module.css";
 
-//TODO: ESTILIZAR MOBILE, DESKTOP DESTA SECTION
-//TODO: CRIAR A SECTION SERVIÇOS
-
 export default function SectionExperience() {
   return (
-    <section className="section">
+    <section className="section" id="experiencia">
       <h2 className={`heading2 ${styles.sectionExperienceTitle}`}>
         Experiência
       </h2>
