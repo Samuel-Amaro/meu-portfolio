@@ -97,26 +97,6 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="#interesses"
-              target="_self"
-              rel="next"
-              title="Seção Interesses"
-              className={
-                currentHash === "#interesses"
-                  ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
-                  : styles.headerNavLink
-              }
-              aria-current={currentHash === "#interesses"}
-            >
-              <FontAwesomeIcon
-                icon={faList}
-                className={styles.headerNavLinkIcon}
-              />
-              <span className={styles.headerTextLink}>Interesses</span>
-            </Link>
-          </li>
-          <li>
-            <Link
               href="#projetos"
               target="_self"
               rel="next"
