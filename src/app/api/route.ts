@@ -14,5 +14,8 @@ export async function GET(_request: Request) {
   );
   //Retorna o conteúdo do arquivo de dados no formato JSON
   const jsonDatas = JSON.parse(fileContents) as { projects: Project[] };
-  return NextResponse.json(jsonDatas, { status: 200 });
+  //reordenar os valores do final para o inicio
+  jsonDatas.projects.sort((a, b) => b.id - a.id);
+  //corta o array para pagination
+  return NextResponse.json(jsonDatas.projects, { status: 200 });
 }
