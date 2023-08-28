@@ -1,0 +1,32 @@
+.modal {
+  border: none;
+  display: block;
+  max-width: 700px;
+  padding: 24px 24px 0 24px;
+  height: min-content;
+  min-height: auto;
+  margin: auto 16px auto 16px;
+  width: calc(100% - 32px);
+  border-radius: 10px;
+  background-color: var(--choose13);
+}
+
+.modalButton {
+  display: block;
+  box-sizing: border-box;
+  appearance: none;
+  font-family: inherit;
+  border: none;
+  background-color: transparent;
+  color: var(--bs-primary);
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 0 24px auto;
+}
+
+@media screen and (min-width: 730px) {
+  .modal {
+    margin: auto;
+  }
+}
