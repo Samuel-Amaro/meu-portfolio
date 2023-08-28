@@ -1,0 +1,110 @@
+.containerTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 2px;
+  margin: 0 0 24px 0;
+}
+
+.containerImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  border-radius: 5px;
+  border: 1px solid var(--choose04);
+  margin: 0 0 24px 0;
+}
+
+.containerName {
+  color: var(--choose08);
+  font-weight: 700;
+  line-height: normal;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+}
+
+.containerDescription {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--choose04);
+  margin: 0 0 24px 0;
+}
+
+.containerList {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 5px 10px;
+  margin: 0 0 24px 0;
+}
+
+.containerListItem {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: 1px solid var(--color11);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--choose04);
+  margin: 0;
+}
+
+.containerLinks {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin: 0 0 24px 0;
+  gap: 24px;
+}
+
+.containerLinkIcon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.containerLink {
+  display: block;
+  text-decoration: none;
+  color: var(--choose04);
+}
+
+.containerLink:is(:hover, :focus),
+.containerBtn:is(:hover, :focus) .containerBtnIcon {
+  color: var(--bs-primary);
+}
+
+.containerBtn {
+  display: block;
+  box-sizing: border-box;
+  appearance: none;
+  font-family: inherit;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.containerBtns {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  position: sticky;
+  bottom: 0;
+  padding: 12px 0 12px 0;
+  background-color: var(--choose13);
+  box-shadow: -1px -4px 12px -5px rgba(0, 0, 0, 0.75);
+}
+
+.containerBtnIcon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: var(--choose04);
+}
