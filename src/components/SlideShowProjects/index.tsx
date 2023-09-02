@@ -33,23 +33,29 @@ export default function SlideShowProjects({
   }
 
   return (
-    <article className={styles.container}>
+    <article className={styles.container} aria-live="polite">
       <h4 className={`heading4 ${styles.containerTitle}`}>
         <span>{currentProjec}</span>
         <span>/</span>
         <span>{items.length}</span>
       </h4>
-      <Image
-        src={`/images/${items[currentProjec].image}`}
-        alt={`Ilustração Projeto ${items[currentProjec].name}`}
-        width={391}
-        height={295}
-        className={styles.containerImage}
-      />
-      <h2 className={`${styles.containerName}`}>{items[currentProjec].name}</h2>
-      <p className={styles.containerDescription}>
-        {items[currentProjec].description}
-      </p>
+      <div className={styles.containerFlow}>
+        <Image
+          src={`/images/${items[currentProjec].image}`}
+          alt={`Ilustração Projeto ${items[currentProjec].name}`}
+          width={391}
+          height={295}
+          className={styles.containerImage}
+        />
+        <div className={styles.containerText}>
+          <h2 className={`${styles.containerName}`}>
+            {items[currentProjec].name}
+          </h2>
+          <p className={styles.containerDescription}>
+            {items[currentProjec].description}
+          </p>
+        </div>
+      </div>
       {items[currentProjec].tecnologys.length > 0 && (
         <ul className={styles.containerList}>
           {items[currentProjec].tecnologys.map((tec, index) => (
