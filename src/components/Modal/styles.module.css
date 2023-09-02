@@ -1,7 +1,7 @@
 .modal {
   border: none;
   display: block;
-  max-width: 700px;
+  max-width: 840px;
   padding: 24px 24px 0 24px;
   height: min-content;
   min-height: auto;
@@ -25,7 +25,7 @@
   margin: 0 0 24px auto;
 }
 
-@media screen and (min-width: 730px) {
+@media screen and (min-width: 840px) {
   .modal {
     margin: auto;
   }
