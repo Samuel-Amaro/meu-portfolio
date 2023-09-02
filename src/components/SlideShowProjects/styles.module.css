@@ -8,29 +8,40 @@
 
 .containerImage {
   display: block;
-  max-width: 100%;
+  max-width: 350px;
+  width: 100%;
   height: auto;
-  width: auto;
   border-radius: 5px;
   border: 1px solid var(--choose04);
-  margin: 0 0 24px 0;
+  margin: 0 20px 10px 0;
+  float: left;
+}
+
+/*.containerText {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto 0 auto;
+}*/
+
+.containerFlow {
+  margin: 0 0 16px 0;
 }
 
 .containerName {
   color: var(--choose08);
   font-weight: 700;
   line-height: normal;
-  font-size: 28px;
+  font-size: 26px;
   text-transform: uppercase;
-  margin: 0 0 12px 0;
+  margin: 0;
 }
 
 .containerDescription {
-  font-size: 1rem;
-  line-height: 24px;
+  font-size: 0.9rem;
+  line-height: 20px;
   font-weight: 400;
   color: var(--choose04);
-  margin: 0 0 24px 0;
+  margin: 0;
 }
 
 .containerList {
@@ -40,6 +51,7 @@
   align-items: center;
   gap: 5px 10px;
   margin: 0 0 24px 0;
+  clear: left;
 }
 
 .containerListItem {
@@ -47,7 +59,7 @@
   font-weight: 500;
   text-transform: uppercase;
   border: 1px solid var(--color11);
-  padding: 4px 8px;
+  padding: 3px 5px;
   border-radius: 4px;
   color: var(--choose04);
   margin: 0;
@@ -108,3 +120,20 @@
   height: 32px;
   color: var(--choose04);
 }
+
+/*@media screen and (min-width: 648px) {
+  .containerFlow {
+    display: grid;
+    grid-template-columns: minmax(min-content, 350px) minmax(min-content, 400px);
+    gap: 20px;
+  }
+
+  .containerImage {
+    margin: 0;
+  }
+
+  .containerText {
+    max-height: 100%;
+    overflow: auto;
+  }
+}*/
