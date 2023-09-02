@@ -66,7 +66,7 @@ export default function SectionProjects() {
         </p>
         {data.length > 0 ? (
           <>
-            <div className={styles.sectionProjectsList}>
+            <div className={styles.sectionProjectsList} aria-live="polite">
               {data.slice(0, limit).map((project, index) => {
                 return (
                   <Fragment key={project.id}>
