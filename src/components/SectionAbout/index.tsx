@@ -117,7 +117,7 @@ export default function SectionAbout() {
           </Link>
         </li>
       </ul>
-      <a
+      {/*<a
         className={styles.sectionBtn}
         href={"#curriculo"}
         target="_blank"
@@ -128,7 +128,7 @@ export default function SectionAbout() {
         title="Link para Curriculo de Samuel"
       >
         Currículo(PDF)
-      </a>
+    </a>*/}
     </div>
   );
   const desktopContent = (
