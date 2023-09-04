@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Saira_Extra_Condensed, Mulish } from "next/font/google";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import dynamic from "next/dynamic";
+import Footer from "@/components/Footer";
 
 const saira_extra_condensed = Saira_Extra_Condensed({
   subsets: ["latin"],
@@ -55,6 +56,7 @@ export default function RootLayout({
         <ThemeContextProvider>
           <Header />
           {children}
+          <Footer />
         </ThemeContextProvider>
       </body>
     </html>
