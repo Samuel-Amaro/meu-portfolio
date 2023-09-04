@@ -12,6 +12,7 @@ import { Fragment, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Modal from "../Modal";
 import SlideShowProjects from "../SlideShowProjects";
+import { shimer, toBase64 } from "@/utils/blurImage";
 
 async function fetchProjects(url: string) {
   const response = await fetch(url);
@@ -156,6 +157,8 @@ function CardProject({
         width={391}
         height={295}
         className={styles.cardImage}
+        placeholder="blur"
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimer(391, 295))}`}
       />
       <h3 className={`heading4 ${styles.cardTitle}`}>{name}</h3>
       <div className={styles.cardContainerBtns}>
