@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Portefólio Samuel Amaro",
     description: "Portfólio Web site do desenvolvedor samuel amaro",
     siteName: "Portfólio Samuel Amaro",
-    url: "/",
+    url: "https://meu-portfolio-topaz-alpha.vercel.app/",
     type: "website",
   },
 };
