@@ -9,6 +9,7 @@ import {
 import Link from "next/link";
 import { Project } from "@/types/projects";
 import styles from "./styles.module.css";
+import { shimer, toBase64 } from "@/utils/blurImage";
 
 type SlideProjectsProps = {
   items: Project[];
@@ -112,6 +113,10 @@ function Project({
           width={391}
           height={295}
           className={styles.containerImage}
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimer(391, 295),
+          )}`}
         />
         <div className={styles.containerText}>
           <h2 className={`${styles.containerName}`}>{datas.name}</h2>
