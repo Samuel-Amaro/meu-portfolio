@@ -304,7 +304,10 @@
         "JavaScript",
         "React.JS",
         "NPM",
-        "Web Acessibility"
+        "Web Acessibility",
+        "Jest",
+        "React Testing Library",
+        "Tests"
       ],
       "image": "project26.jpg"
     },
@@ -321,7 +324,10 @@
         "JavaScript",
         "React.JS",
         "NPM",
-        "Web Acessibility"
+        "Web Acessibility",
+        "Jest",
+        "React Testing Library",
+        "Tests"
       ],
       "image": "project27.jpg"
     },
@@ -579,6 +585,15 @@
         "CONSUMO API REST"
       ],
       "image": "project41.jpg"
+    },
+    {
+      "id": 42,
+      "name": "Landing Page Beady Agency",
+      "repository": "https://github.com/Samuel-Amaro/beady-agency",
+      "url": "https://beady-agency.vercel.app/",
+      "description": "Landing Page Beady Agency",
+      "tecnologys": ["html", "css", "Bem", "JavaScript", "Web Acessibility"],
+      "image": "project42.jpg"
     }
   ]
 }
