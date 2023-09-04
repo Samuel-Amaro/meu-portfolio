@@ -121,19 +121,18 @@
   color: var(--choose04);
 }
 
-/*@media screen and (min-width: 648px) {
-  .containerFlow {
-    display: grid;
-    grid-template-columns: minmax(min-content, 350px) minmax(min-content, 400px);
-    gap: 20px;
-  }
+.slider {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0px;
+  max-width: 100%;
+  overflow: hidden;
+  width: 100%;
+}
 
-  .containerImage {
-    margin: 0;
-  }
-
-  .containerText {
-    max-height: 100%;
-    overflow: auto;
-  }
-}*/
+.project {
+  flex: 0 0 100%;
+  transition: opacity 0.1s ease-in-out;
+}
