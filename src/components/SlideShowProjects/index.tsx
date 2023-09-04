@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -9,6 +11,7 @@ import {
 import Link from "next/link";
 import { Project } from "@/types/projects";
 import styles from "./styles.module.css";
+import { forwardRef } from "react";
 
 type SlideProjectsProps = {
   items: Project[];
@@ -39,64 +42,7 @@ export default function SlideShowProjects({
         <span>/</span>
         <span>{items.length}</span>
       </h4>
-      <div className={styles.containerFlow}>
-        <Image
-          src={`/images/${items[currentProjec].image}`}
-          alt={`Ilustração Projeto ${items[currentProjec].name}`}
-          width={391}
-          height={295}
-          className={styles.containerImage}
-        />
-        <div className={styles.containerText}>
-          <h2 className={`${styles.containerName}`}>
-            {items[currentProjec].name}
-          </h2>
-          <p className={styles.containerDescription}>
-            {items[currentProjec].description}
-          </p>
-        </div>
-      </div>
-      {items[currentProjec].tecnologys.length > 0 && (
-        <ul className={styles.containerList}>
-          {items[currentProjec].tecnologys.map((tec, index) => (
-            <li key={index} className={styles.containerListItem}>
-              {tec.toUpperCase()}
-            </li>
-          ))}
-        </ul>
-      )}
-      <div className={styles.containerLinks}>
-        <Link
-          href={items[currentProjec].repository}
-          target="_blank"
-          rel="external"
-          title="Visualizar Repósitorio Projeto"
-          aria-label="Visualizar Repósitorio Projeto"
-          className={styles.containerLink}
-        >
-          <FontAwesomeIcon
-            icon={faGithub}
-            width={24}
-            height={24}
-            className={styles.containerLinkIcon}
-          />
-        </Link>
-        <Link
-          href={items[currentProjec].url}
-          target="_blank"
-          rel="external"
-          title="Visualizar Projeto"
-          aria-label="Visualizar Projeto"
-          className={styles.containerLink}
-        >
-          <FontAwesomeIcon
-            icon={faLink}
-            width={24}
-            height={24}
-            className={styles.containerLinkIcon}
-          />
-        </Link>
-      </div>
+      <Project datas={items[currentProjec]} />
       <div className={styles.containerBtns}>
         <button
           type="button"
@@ -144,5 +90,77 @@ export default function SlideShowProjects({
         </button>
       </div>
     </article>
+  );
+}
+
+function Project({
+  datas,
+}: {
+  datas: {
+    image: string;
+    name: string;
+    description: string;
+    tecnologys: string[];
+    repository: string;
+    url: string;
+  };
+}) {
+  return (
+    <div className={styles.project}>
+      <div className={styles.containerFlow}>
+        <Image
+          src={`/images/${datas.image}`}
+          alt={`Ilustração Projeto ${datas.name}`}
+          width={391}
+          height={295}
+          className={styles.containerImage}
+        />
+        <div className={styles.containerText}>
+          <h2 className={`${styles.containerName}`}>{datas.name}</h2>
+          <p className={styles.containerDescription}>{datas.description}</p>
+        </div>
+      </div>
+      {datas.tecnologys.length > 0 && (
+        <ul className={styles.containerList}>
+          {datas.tecnologys.map((tec, index) => (
+            <li key={index} className={styles.containerListItem}>
+              {tec.toUpperCase()}
+            </li>
+          ))}
+        </ul>
+      )}
+      <div className={styles.containerLinks}>
+        <Link
+          href={datas.repository}
+          target="_blank"
+          rel="external"
+          title="Visualizar Repósitorio Projeto"
+          aria-label="Visualizar Repósitorio Projeto"
+          className={styles.containerLink}
+        >
+          <FontAwesomeIcon
+            icon={faGithub}
+            width={24}
+            height={24}
+            className={styles.containerLinkIcon}
+          />
+        </Link>
+        <Link
+          href={datas.url}
+          target="_blank"
+          rel="external"
+          title="Visualizar Projeto"
+          aria-label="Visualizar Projeto"
+          className={styles.containerLink}
+        >
+          <FontAwesomeIcon
+            icon={faLink}
+            width={24}
+            height={24}
+            className={styles.containerLinkIcon}
+          />
+        </Link>
+      </div>
+    </div>
   );
 }
