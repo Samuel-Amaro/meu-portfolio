@@ -13,6 +13,7 @@ import Link from "next/link";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import useActivatedScroll from "@/hooks/useActivatedScroll";
 
 export default function Header() {
   //searchparams acionara nova renderizações
@@ -24,6 +25,8 @@ export default function Header() {
     //a cada nova re-renderização acionada por params, obtemos o hash atualizado
     setCurrentHash(window.location.hash);
   }, [searchParams]);
+
+  const itemActivatedScroll = useActivatedScroll("sobre");
 
   return (
     <header className={styles.header}>
@@ -42,7 +45,7 @@ export default function Header() {
               rel="next"
               title="Seção Sobre"
               className={
-                currentHash === "#sobre"
+                currentHash === "#sobre" || itemActivatedScroll === "sobre"
                   ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
                   : styles.headerNavLink
               }
@@ -62,7 +65,8 @@ export default function Header() {
               rel="next"
               title="Seção Educação"
               className={
-                currentHash === "#educacao"
+                currentHash === "#educacao" ||
+                itemActivatedScroll === "educacao"
                   ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
                   : styles.headerNavLink
               }
@@ -82,7 +86,7 @@ export default function Header() {
               rel="next"
               title="Seção Skills"
               className={
-                currentHash === "#skills"
+                currentHash === "#skills" || itemActivatedScroll === "skills"
                   ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
                   : styles.headerNavLink
               }
@@ -102,7 +106,8 @@ export default function Header() {
               rel="next"
               title="Seção Projetos"
               className={
-                currentHash === "#projetos"
+                currentHash === "#projetos" ||
+                itemActivatedScroll === "projetos"
                   ? `${styles.headerNavLink} ${styles.headerNavLinkActive}`
                   : styles.headerNavLink
               }
