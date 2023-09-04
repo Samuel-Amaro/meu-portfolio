@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -11,7 +9,6 @@ import {
 import Link from "next/link";
 import { Project } from "@/types/projects";
 import styles from "./styles.module.css";
-import { forwardRef } from "react";
 
 type SlideProjectsProps = {
   items: Project[];
@@ -24,6 +21,7 @@ export default function SlideShowProjects({
   currentProjec,
   setCurrentProject,
 }: SlideProjectsProps) {
+
   function nextSlide() {
     const newCurrentProject = (currentProjec + 1) % items.length;
     setCurrentProject(newCurrentProject);
