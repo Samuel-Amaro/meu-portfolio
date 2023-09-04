@@ -4,6 +4,8 @@ Portfólio/Currículo em formato web, para demostrar informações e experiênci
 
 ## Visão Geral
 
+![](./public/images/result-desktop.png)
+
 ### Links
 
  - [Reposítorio Projeto](https://github.com/Samuel-Amaro/meu-portfolio)
