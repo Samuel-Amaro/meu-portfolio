@@ -18,6 +18,8 @@ Portfólio/Currículo em formato web, para demostrar informações e experiênci
  - React
  - NPM
  - Next.js App Router
+ - Hook SWR
+ - LocalStorage Web API
 
 ## Getting Started
 
