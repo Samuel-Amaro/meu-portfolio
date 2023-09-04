@@ -5,6 +5,7 @@ import { Saira_Extra_Condensed, Mulish } from "next/font/google";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
+import BtnPageUp from "@/components/BtnPageUp";
 
 const saira_extra_condensed = Saira_Extra_Condensed({
   subsets: ["latin"],
@@ -57,6 +58,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <BtnPageUp />
         </ThemeContextProvider>
       </body>
     </html>
