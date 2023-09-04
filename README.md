@@ -6,8 +6,8 @@ Portfólio/Currículo em formato web, para demostrar informações e experiênci
 
 ### Links
 
- - [Reposítorio Projeto](#)
- - [Resultado Projeto](#)
+ - [Reposítorio Projeto](https://github.com/Samuel-Amaro/meu-portfolio)
+ - [Resultado Projeto](https://meu-portfolio-topaz-alpha.vercel.app/)
 
 ### Construído com
 
