@@ -600,6 +600,15 @@
       "description": "Landing Page Beady Agency",
       "tecnologys": ["html", "css", "Bem", "JavaScript", "Web Acessibility"],
       "image": "project42.jpg"
+    },
+    {
+      "id": 43,
+      "name": "Pesquisador de nome de usuário do Github",
+      "repository": "https://github.com/Samuel-Amaro/teste-niuco",
+      "url": "https://teste-niuco.vercel.app/",
+      "description": "Pesquisador de nome de usuário do Github",
+      "tecnologys": ["html", "css", "JavaScript", "Web Acessibility", "TypeScript", "Next.JS App Router", "SWR Hook Fetch Datas", "React.JS"],
+      "image": "project43.jpg"
     }
   ]
 }
