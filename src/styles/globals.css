@@ -122,6 +122,7 @@ body {
   .section {
     padding: 0;
     max-width: 1410px;
+    margin: 0 auto 0 auto;
   }
 }
 
