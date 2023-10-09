@@ -307,7 +307,7 @@
         "Web Acessibility",
         "Jest",
         "React Testing Library",
-        "Tests"
+        "Tests Unit"
       ],
       "image": "project26.jpg"
     },
@@ -327,7 +327,7 @@
         "Web Acessibility",
         "Jest",
         "React Testing Library",
-        "Tests"
+        "Tests Unit"
       ],
       "image": "project27.jpg"
     },
@@ -344,7 +344,10 @@
         "JavaScript",
         "React.JS",
         "NPM",
-        "Web Acessibility"
+        "Web Acessibility",
+        "Jest",
+        "React Testing Library",
+        "Tests Unit"
       ],
       "image": "project28.jpg"
     },
@@ -364,7 +367,10 @@
         "API",
         "fetch.JS",
         "CONSUMO API REST",
-        "Web Acessibility"
+        "Web Acessibility",
+        "Jest",
+        "React Testing Library",
+        "Tests Unit"
       ],
       "image": "project29.jpg"
     },
