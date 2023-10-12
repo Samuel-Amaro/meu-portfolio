@@ -609,6 +609,15 @@
       "description": "Pesquisador de nome de usuário do Github",
       "tecnologys": ["html", "css", "JavaScript", "Web Acessibility", "TypeScript", "Next.JS App Router", "SWR Hook Fetch Datas", "React.JS"],
       "image": "project43.jpg"
+    },
+    {
+      "id": 44,
+      "name": "Aplicativo Web compartilhamento de links",
+      "repository": "https://github.com/Samuel-Amaro/aplicativo-compartilhamento-links",
+      "url": "https://aplicativo-compartilhamento-links.vercel.app/",
+      "description": "Aplicativo web de compartilhamento de links, permite o usuário construir links customizados, e compartilhá-los, criar um perfil com nome e e-mail e seus links para compartilhar com o mundo.",
+      "tecnologys": ["html", "css", "JavaScript", "Web Acessibility", "TypeScript", "Next.JS App Router", "SWR Hook Fetch Datas", "React.JS", "Jest", "React Testing Library", "CSS Modules", "Tests Unit"],
+      "image": "project44.jpg"
     }
   ]
 }
