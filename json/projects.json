@@ -618,6 +618,15 @@
       "description": "Aplicativo web de compartilhamento de links, permite o usuário construir links customizados, e compartilhá-los, criar um perfil com nome e e-mail e seus links para compartilhar com o mundo.",
       "tecnologys": ["html", "css", "JavaScript", "Web Acessibility", "TypeScript", "Next.JS App Router", "SWR Hook Fetch Datas", "React.JS", "Jest", "React Testing Library", "CSS Modules", "Tests Unit"],
       "image": "project44.jpg"
+    },
+    {
+      "id": 45,
+      "name": "Site WS Engenharia Sustentável",
+      "repository": "#",
+      "url": "https://casasdeisopor.com/",
+      "description": "Site sobre WS Engenharia Sustentável, divulgação de serviços, e seu método inovador de construção",
+      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Next.JS App Router", "React.JS", "CSS Modules"],
+      "image": "project45.jpg"
     }
   ]
 }
