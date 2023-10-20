@@ -6,6 +6,7 @@ import { ThemeContextProvider } from "@/context/ThemeContext";
 import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
 import BtnPageUp from "@/components/BtnPageUp";
+import { Analytics } from "@vercel/analytics/react";
 
 const saira_extra_condensed = Saira_Extra_Condensed({
   subsets: ["latin"],
@@ -54,12 +55,15 @@ export default function RootLayout({
       className={`${saira_extra_condensed.variable} ${mulish.variable}`}
     >
       <body>
-        <ThemeContextProvider>
-          <Header />
-          {children}
-          <Footer />
-          <BtnPageUp />
-        </ThemeContextProvider>
+        <>
+          <ThemeContextProvider>
+            <Header />
+            {children}
+            <Footer />
+            <BtnPageUp />
+          </ThemeContextProvider>
+          <Analytics />
+        </>
       </body>
     </html>
   );
