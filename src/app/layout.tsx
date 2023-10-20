@@ -54,16 +54,14 @@ export default function RootLayout({
       lang="pt-br"
       className={`${saira_extra_condensed.variable} ${mulish.variable}`}
     >
-      <body>
-        <>
-          <ThemeContextProvider>
-            <Header />
-            {children}
-            <Footer />
-            <BtnPageUp />
-          </ThemeContextProvider>
-          <Analytics />
-        </>
+      <body suppressHydrationWarning={true}>
+        <ThemeContextProvider>
+          <Header />
+          {children}
+          <Footer />
+          <BtnPageUp />
+        </ThemeContextProvider>
+        <Analytics />
       </body>
     </html>
   );
