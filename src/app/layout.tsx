@@ -54,7 +54,7 @@ export default function RootLayout({
       lang="pt-br"
       className={`${saira_extra_condensed.variable} ${mulish.variable}`}
     >
-      <body suppressHydrationWarning={true}>
+      <body>
         <ThemeContextProvider>
           <Header />
           {children}
