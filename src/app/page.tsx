@@ -4,6 +4,7 @@ import LineDiviser from "@/components/LineDiviser";
 import SectionEducation from "@/components/SectionEducation";
 import SectionSkills from "@/components/SectionSkills";
 import SectionProjects from "@/components/SectionProjects";
+import SectionExperience from "@/components/SectionExperience";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
       <SectionAbout />
       <LineDiviser />
       <SectionEducation />
+      <LineDiviser />
+      <SectionExperience />
       <LineDiviser />
       <SectionSkills />
       <LineDiviser />
