@@ -9,19 +9,18 @@ export default function SectionExperience() {
       <div className={styles.sectionExperienceContainer}>
         <article>
           <h3 className={`heading3 ${styles.sectionExperienceCargo}`}>
-            Cargo Exercido - link empresa
+            Desenvolvedor Front-End
           </h3>
           <h4 className={`heading4 ${styles.sectionExperienceEmpresa}`}>
-            Nome empresa/instituição
+            Cantto
           </h4>
           <p className={styles.sectionExperienceDescription}>
-            uma descrição resumindo as tarefas, rotina diaria, ferramentas, onde
-            atuo, oque resolveu, etc... um resumo da experiencia
+            Atuando como desenvolvedor Front-End construindo UIs com as seguintes ferramentas/tecnologias: Svelte, SvelteKit, TypeScript, Git, GitHub, GitFlow, HTML, CSS, PostCSS
           </p>
         </article>
         <aside>
           <p className={styles.sectionExperiencedate}>
-            {"data inicio"} - {"data sáida"}
+            nov 2023 - o momento
           </p>
         </aside>
       </div>

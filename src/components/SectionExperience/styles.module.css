@@ -15,6 +15,7 @@
 
 .sectionExperiencedate {
   color: var(--choose10);
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 800px) {
