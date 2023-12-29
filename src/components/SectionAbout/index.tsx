@@ -68,7 +68,7 @@ export default function SectionAbout() {
         </a>
         , lá foi onde escrevi meus primeiros códigos e também onde eu descobri a
         minha paixão por esse mundo. Atualmente tenho experiencia em tecnologias
-        como React, Typescript, JavaScript, HTML, CSS, GIT, Next.js, Integração
+        como React, Typescript, JavaScript, HTML, CSS, GIT, Next.js, Svelte, SvelteKit, Integração
         com apis rest usando Fetch, é SWR e continuo a estudar constantemente,
         aprendendo as melhores praticas e ferramentas. Sinta-se a vontade para
         visualizar o meu currículo e minhas redes logo abaixo.
