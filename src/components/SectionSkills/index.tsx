@@ -19,6 +19,7 @@ import {
   SiNextdotjs,
   SiJest,
   SiTestinglibrary,
+  SiSvelte,
 } from "react-icons/si";
 import IconSWR from "../Icons/IconSWR";
 import IconCSSModules from "../Icons/CSSModules";
@@ -155,6 +156,18 @@ export default function SectionSkills() {
           <SiTestinglibrary className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>
             React Testing Library
+          </span>
+        </li>
+        <li className={styles.sectionSkillsToolsItem}>
+          <SiSvelte className={styles.sectionSkillsIcon} />
+          <span className={styles.sectionSkillsContentText}>
+            Svelte
+          </span>
+        </li>
+        <li className={styles.sectionSkillsToolsItem}>
+          <SiSvelte className={styles.sectionSkillsIcon} />
+          <span className={styles.sectionSkillsContentText}>
+            SvelteKit
           </span>
         </li>
       </ul>
