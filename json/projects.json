@@ -627,6 +627,24 @@
       "description": "Site sobre WS Engenharia Sustentável, divulgação de serviços, e seu método inovador de construção",
       "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Next.JS App Router", "React.JS", "CSS Modules"],
       "image": "project45.jpg"
+    },
+    {
+      "id": 46,
+      "name": "App To-Do List",
+      "repository": "https://github.com/Samuel-Amaro/moz-todo-svelte",
+      "url": "https://moz-todo-svelte-psi.vercel.app/",
+      "description": "Aplicativo Web de lista de tarefas",
+      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Svelte", "Vite"],
+      "image": "project46.jpg"
+    },
+    {
+      "id": 47,
+      "name": "Quiz Front-End",
+      "repository": "https://github.com/Samuel-Amaro/quiz-frontend",
+      "url": "https://quiz-frontend-blue.vercel.app/",
+      "description": "Aplicativo Web de teste de conhecimento sobre assuntos específicos relacionados à área de desenvolvimento front-end",
+      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Svelte", "SvelteKit"],
+      "image": "project47.jpg"
     }
   ]
 }
