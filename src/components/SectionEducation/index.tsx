@@ -18,7 +18,7 @@ export default function SectionEducation() {
         </article>
         <aside>
           <p className={styles.sectionEducationdate}>
-            Março 2019 - Dezembro 2021
+            Fev 2019 - Dezembro 2021
           </p>
         </aside>
       </div>
