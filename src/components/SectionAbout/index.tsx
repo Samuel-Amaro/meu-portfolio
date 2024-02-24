@@ -3,7 +3,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "./styles.module.css";
 import FrontMentor from "../Icons/FrontMentor";
 import useMatchMedia from "@/hooks/useMatchMedia";
@@ -16,12 +15,13 @@ export default function SectionAbout() {
           <div className={styles.sectionContainerProfile}>
             <div className={styles.sectionCamadaBg}>
               <div className={styles.sectionCamadaLayer}>
-                <Image
+                <img
                   src="/images/profile.png"
-                  alt="Imagen perfil"
+                  alt="Imagen de perfil de samuel amaro com camiseta branca com riscos na cor preta e rosto sorridente"
                   width={300}
                   height={300}
                   className={styles.sectionProfile}
+                  title="Imagen de perfil de samuel amaro"
                 />
               </div>
             </div>
@@ -137,12 +137,13 @@ export default function SectionAbout() {
       <div className={styles.sectionContainerProfile}>
         <div className={styles.sectionCamadaBg}>
           <div className={styles.sectionCamadaLayer}>
-            <Image
+            <img
               src="/images/profile.png"
-              alt="Imagen perfil"
+              alt="Imagen de perfil de samuel amaro com camiseta branca com riscos na cor preta e rosto sorridente"
               width={300}
               height={300}
               className={styles.sectionProfile}
+              title="Imagen de perfil de samuel amaro"
             />
           </div>
         </div>

@@ -2,7 +2,6 @@
 
 import { Project } from "@/types/projects";
 import ShowMore from "../ShowMore";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLink, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +11,6 @@ import { Fragment, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Modal from "../Modal";
 import SlideShowProjects from "../SlideShowProjects";
-import { shimer, toBase64 } from "@/utils/blurImage";
 
 async function fetchProjects(url: string) {
   const response = await fetch(url);
@@ -151,14 +149,14 @@ function CardProject({
 }) {
   return (
     <div className={styles.card}>
-      <Image
+      <img
         src={`/images/${srcImage}`}
-        alt="Imagem ilustração de projeto"
+        alt={`Imagem ilustração do projeto ${name}`}
         width={391}
         height={295}
         className={styles.cardImage}
-        placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimer(391, 295))}`}
+        decoding="async"
+        title={`Imagem ilustração do projeto ${name}`}
       />
       <h3 className={`heading4 ${styles.cardTitle}`}>{name}</h3>
       <div className={styles.cardContainerBtns}>

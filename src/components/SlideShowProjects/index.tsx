@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -7,12 +6,11 @@ import {
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { Project } from "@/types/projects";
+import { Project as TypeProject } from "@/types/projects";
 import styles from "./styles.module.css";
-import { shimer, toBase64 } from "@/utils/blurImage";
 
 type SlideProjectsProps = {
-  items: Project[];
+  items: TypeProject[];
   currentProjec: number;
   setCurrentProject: (index: number) => void;
 };
@@ -107,16 +105,14 @@ function Project({
   return (
     <div className={styles.project}>
       <div className={styles.containerFlow}>
-        <Image
+        <img
           src={`/images/${datas.image}`}
           alt={`Ilustração Projeto ${datas.name}`}
           width={391}
           height={295}
           className={styles.containerImage}
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimer(391, 295),
-          )}`}
+          decoding="async"
+          title={`Ilustração Projeto ${datas.name}`}
         />
         <div className={styles.containerText}>
           <h2 className={`${styles.containerName}`}>{datas.name}</h2>
