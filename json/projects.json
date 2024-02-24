@@ -645,6 +645,15 @@
       "description": "Aplicativo Web de teste de conhecimento sobre assuntos específicos relacionados à área de desenvolvimento front-end",
       "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Svelte", "SvelteKit"],
       "image": "project47.jpg"
+    },
+    {
+      "id": 48,
+      "name": "Galleria SlideShow Site",
+      "repository": "https://github.com/Samuel-Amaro/galleria-slideshow-site",
+      "url": "https://galleria-slideshow-site-seven.vercel.app/",
+      "description": "Site de apresentação de slides de galeria de arte. As obras de arte são do ART INSTITUTE OF CHICAGO",
+      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Svelte", "SvelteKit"],
+      "image": "project48.jpg"
     }
   ]
 }
