@@ -11,6 +11,7 @@ import { Fragment, useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 import Modal from "../Modal";
 import SlideShowProjects from "../SlideShowProjects";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 async function fetchProjects(url: string) {
   const response = await fetch(url);
@@ -47,6 +48,17 @@ export default function SectionProjects() {
   function openModal(index: number) {
     setCurrentProject(index);
     setModalIsOpen(true);
+  }
+
+  function nextSlide() {
+    const newCurrentProject = (currentProject + 1) % data.length;
+    setCurrentProject(newCurrentProject);
+  }
+
+  function previousSlide() {
+    const newPreviousCurrentProject =
+      currentProject === 0 ? data.length - 1 : currentProject - 1;
+    setCurrentProject(newPreviousCurrentProject);
   }
 
   useEffect(() => {
@@ -118,13 +130,58 @@ export default function SectionProjects() {
             onClose={() => setModalIsOpen(false)}
             className={styles.sectionProjectsModal}
           >
-            <SlideShowProjects
-              items={data}
-              currentProjec={currentProject}
-              setCurrentProject={(index: number) => {
-                setCurrentProject(index);
-              }}
-            />
+            <h4 className={`heading4 ${styles.containerTitle}`}>
+              <span>{currentProject}</span>
+              <span>/</span>
+              <span>{data.length}</span>
+            </h4>
+            <SlideShowProjects items={data} currentProjec={currentProject} />
+            <div className={styles.containerBtns}>
+              <button
+                type="button"
+                title="Ir para o proximo projeto"
+                aria-label="Ir para o proximo projeto"
+                onClick={() => previousSlide()}
+                onKeyDown={(event) => {
+                  if (
+                    event.key === "Enter" ||
+                    event.key === "" ||
+                    event.key === "ArrowLeft"
+                  )
+                    previousSlide();
+                }}
+                className={styles.containerBtn}
+              >
+                <FontAwesomeIcon
+                  icon={faArrowLeft}
+                  width={24}
+                  height={24}
+                  className={styles.containerBtnIcon}
+                />
+              </button>
+              <button
+                type="button"
+                title="Retornar ao projeto anterior"
+                aria-label="Retornar ao projeto anterior"
+                onClick={() => nextSlide()}
+                onKeyDown={(event) => {
+                  if (
+                    event.key === "Enter" ||
+                    event.key === "" ||
+                    event.key === "ArrowRight"
+                  )
+                    nextSlide();
+                }}
+                className={styles.containerBtn}
+              >
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  width={24}
+                  height={24}
+                  className={styles.containerBtnIcon}
+                />
+              </button>
+            </div>
           </Modal>,
           document.body,
         )}

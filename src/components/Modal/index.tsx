@@ -9,7 +9,7 @@ export default function Modal({
   isOpen,
   className,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode[];
   onClose: () => void;
   isOpen: boolean;
   className?: string;
@@ -71,7 +71,9 @@ export default function Modal({
       >
         X
       </button>
-      {children}
+      {children[0]}
+      <div className={styles.content}>{children[1]}</div>
+      {children[2]}
     </dialog>
   );
 }

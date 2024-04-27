@@ -1,9 +1,6 @@
-.containerTitle {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 2px;
-  margin: 0 0 24px 0;
+.container {
+  height: 100%;
+  position: relative;
 }
 
 .containerImage {
@@ -16,12 +13,6 @@
   margin: 0 20px 10px 0;
   float: left;
 }
-
-/*.containerText {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto 0 auto;
-}*/
 
 .containerFlow {
   margin: 0 0 16px 0;
@@ -90,37 +81,6 @@
   color: var(--bs-primary);
 }
 
-.containerBtn {
-  display: block;
-  box-sizing: border-box;
-  appearance: none;
-  font-family: inherit;
-  padding: 5px 10px;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.containerBtns {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  position: sticky;
-  bottom: 0;
-  padding: 12px 0 12px 0;
-  background-color: var(--choose13);
-  box-shadow: -1px -4px 12px -5px rgba(0, 0, 0, 0.75);
-}
-
-.containerBtnIcon {
-  display: block;
-  width: 32px;
-  height: 32px;
-  color: var(--choose04);
-}
-
 .slider {
   display: flex;
   flex-flow: row nowrap;
@@ -135,4 +95,5 @@
 .project {
   flex: 0 0 100%;
   transition: opacity 0.1s ease-in-out;
+  padding-bottom: 70px;
 }

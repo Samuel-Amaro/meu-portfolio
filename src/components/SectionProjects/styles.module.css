@@ -65,3 +65,42 @@
   margin: 0 24px 0 24px;
   gap: 24px;
 }
+
+.containerTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 2px;
+  margin: 0 0 24px 0;
+}
+
+.containerBtns {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+  bottom: 0;
+  padding: 12px 0 12px 0;
+  background-color: var(--choose13);
+  box-shadow: -1px -4px 12px -5px rgba(0, 0, 0, 0.75);
+}
+
+.containerBtn {
+  display: block;
+  box-sizing: border-box;
+  appearance: none;
+  font-family: inherit;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.containerBtnIcon {
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: var(--choose04);
+}
