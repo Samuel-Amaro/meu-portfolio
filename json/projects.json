@@ -607,7 +607,16 @@
       "repository": "https://github.com/Samuel-Amaro/teste-niuco",
       "url": "https://teste-niuco.vercel.app/",
       "description": "Pesquisador de nome de usuário do Github",
-      "tecnologys": ["html", "css", "JavaScript", "Web Acessibility", "TypeScript", "Next.JS App Router", "SWR Hook Fetch Datas", "React.JS"],
+      "tecnologys": [
+        "html",
+        "css",
+        "JavaScript",
+        "Web Acessibility",
+        "TypeScript",
+        "Next.JS App Router",
+        "SWR Hook Fetch Datas",
+        "React.JS"
+      ],
       "image": "project43.jpg"
     },
     {
@@ -616,7 +625,20 @@
       "repository": "https://github.com/Samuel-Amaro/aplicativo-compartilhamento-links",
       "url": "https://aplicativo-compartilhamento-links.vercel.app/",
       "description": "Aplicativo web de compartilhamento de links, permite o usuário construir links customizados, e compartilhá-los, criar um perfil com nome e e-mail e seus links para compartilhar com o mundo.",
-      "tecnologys": ["html", "css", "JavaScript", "Web Acessibility", "TypeScript", "Next.JS App Router", "SWR Hook Fetch Datas", "React.JS", "Jest", "React Testing Library", "CSS Modules", "Tests Unit"],
+      "tecnologys": [
+        "html",
+        "css",
+        "JavaScript",
+        "Web Acessibility",
+        "TypeScript",
+        "Next.JS App Router",
+        "SWR Hook Fetch Datas",
+        "React.JS",
+        "Jest",
+        "React Testing Library",
+        "CSS Modules",
+        "Tests Unit"
+      ],
       "image": "project44.jpg"
     },
     {
@@ -625,7 +647,15 @@
       "repository": "#",
       "url": "https://casasdeisopor.com/",
       "description": "Site sobre WS Engenharia Sustentável, divulgação de serviços, e seu método inovador de construção",
-      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Next.JS App Router", "React.JS", "CSS Modules"],
+      "tecnologys": [
+        "html",
+        "css",
+        "Web Acessibility",
+        "TypeScript",
+        "Next.JS App Router",
+        "React.JS",
+        "CSS Modules"
+      ],
       "image": "project45.jpg"
     },
     {
@@ -634,7 +664,14 @@
       "repository": "https://github.com/Samuel-Amaro/moz-todo-svelte",
       "url": "https://moz-todo-svelte-psi.vercel.app/",
       "description": "Aplicativo Web de lista de tarefas",
-      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Svelte", "Vite"],
+      "tecnologys": [
+        "html",
+        "css",
+        "Web Acessibility",
+        "TypeScript",
+        "Svelte",
+        "Vite"
+      ],
       "image": "project46.jpg"
     },
     {
@@ -643,7 +680,14 @@
       "repository": "https://github.com/Samuel-Amaro/quiz-frontend",
       "url": "https://quiz-frontend-blue.vercel.app/",
       "description": "Aplicativo Web de teste de conhecimento sobre assuntos específicos relacionados à área de desenvolvimento front-end",
-      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Svelte", "SvelteKit"],
+      "tecnologys": [
+        "html",
+        "css",
+        "Web Acessibility",
+        "TypeScript",
+        "Svelte",
+        "SvelteKit"
+      ],
       "image": "project47.jpg"
     },
     {
@@ -652,8 +696,34 @@
       "repository": "https://github.com/Samuel-Amaro/galleria-slideshow-site",
       "url": "https://galleria-slideshow-site-seven.vercel.app/",
       "description": "Site de apresentação de slides de galeria de arte. As obras de arte são do ART INSTITUTE OF CHICAGO",
-      "tecnologys": ["html", "css", "Web Acessibility", "TypeScript", "Svelte", "SvelteKit"],
+      "tecnologys": [
+        "html",
+        "css",
+        "Web Acessibility",
+        "TypeScript",
+        "Svelte",
+        "SvelteKit"
+      ],
       "image": "project48.jpg"
+    },
+    {
+      "id": 49,
+      "name": "Jogo da forca",
+      "repository": "https://github.com/Samuel-Amaro/hangman-game",
+      "url": "https://hangman-game-five-xi.vercel.app/",
+      "description": "O jogo da forca oferece uma experiência envolvente e educativa, onde os usuários podem desfrutar de desafios de palavras enquanto aprimoram suas habilidades linguísticas. Com uma interface intuitiva e recursos bem projetados, proporciona uma experiência de jogo fluida e imersiva.",
+      "tecnologys": [
+        "html",
+        "css",
+        "Web Acessibility",
+        "TypeScript",
+        "Svelte",
+        "SvelteKit",
+        "Vitest",
+        "Tests Unit",
+        "LocalStorage API Web browser"
+      ],
+      "image": "project49.jpg"
     }
   ]
 }
