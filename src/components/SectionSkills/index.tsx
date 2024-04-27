@@ -24,6 +24,7 @@ import {
 import IconSWR from "../Icons/IconSWR";
 import IconCSSModules from "../Icons/CSSModules";
 import ReactHookForm from "../Icons/ReactHookForm";
+import IconVitest from "../Icons/IconVitest";
 
 export default function SectionSkills() {
   return (
@@ -155,7 +156,7 @@ export default function SectionSkills() {
         <li className={styles.sectionSkillsToolsItem}>
           <SiTestinglibrary className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>
-            React Testing Library
+            Testing Library
           </span>
         </li>
         <li className={styles.sectionSkillsToolsItem}>
@@ -168,6 +169,12 @@ export default function SectionSkills() {
           <SiSvelte className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>
             SvelteKit
+          </span>
+        </li>
+        <li className={styles.sectionSkillsToolsItem}>
+          <IconVitest className={styles.sectionSkillsIcon} />
+          <span className={styles.sectionSkillsContentText}>
+            Vitest
           </span>
         </li>
       </ul>
