@@ -18,6 +18,16 @@
   white-space: nowrap;
 }
 
+.sectionLink {
+  display: block;
+  text-decoration: none;
+  color: var(--bs-gray-700);
+}
+
+.sectionLink:is(:hover, :focus){
+  color: var(--choose12);
+}
+
 @media screen and (min-width: 800px) {
   .sectionExperienceContainer {
     display: flex;

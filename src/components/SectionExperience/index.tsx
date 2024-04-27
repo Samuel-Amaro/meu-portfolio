@@ -12,10 +12,10 @@ export default function SectionExperience() {
             Desenvolvedor Front-End
           </h3>
           <h4 className={`heading4 ${styles.sectionExperienceEmpresa}`}>
-            Cantto
+            <a href="https://cantto.com.br/" target="_blank" rel="external" className={styles.sectionLink}>Cantto</a>
           </h4>
           <p className={styles.sectionExperienceDescription}>
-            Atuando como desenvolvedor Front-End construindo UIs com as seguintes ferramentas/tecnologias: Svelte, SvelteKit, TypeScript, Git, GitHub, GitFlow, HTML, CSS, PostCSS
+            Como desenvolvedor front-end na Cantto, tenho a responsabilidade de construir interfaces para o aprimoramento do nosso SaaS (Software as a Service) utilizando tecnologias de ponta e práticas de desenvolvimento ágeis.
           </p>
         </article>
         <aside>
