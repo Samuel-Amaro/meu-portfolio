@@ -51,27 +51,13 @@ export default function SectionAbout() {
         · Desenvolvedor Front-End
       </address>
       <p className={styles.sectionDescription}>
-        Ola! Sou o Samuel amaro, desenvolvedor front-end Web, focado em
-        construir interfaces de usuário, totalmente acessíveis e responsivas que
-        garantam um bom desempenho e ótima experiencia de usuário. Sou formado
-        em análise e desenvolvimento de sistemas. Minha jornada no mundo do
-        desenvolvimento de software começou em 2019, quando inicie meus estudos
-        por meio da faculdade no{" "}
-        <a
-          className={styles.sectionLink}
-          href="https://www.ifg.edu.br/formosa"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Link para instituição Federal Goias"
-        >
-          <abbr title="instituto federal de Goiás">IFG</abbr>
-        </a>
-        , lá foi onde escrevi meus primeiros códigos e também onde eu descobri a
-        minha paixão por esse mundo. Atualmente tenho experiencia em tecnologias
-        como React, Typescript, JavaScript, HTML, CSS, GIT, Next.js, Svelte, SvelteKit, Integração
-        com apis rest usando Fetch, é SWR e continuo a estudar constantemente,
-        aprendendo as melhores praticas e ferramentas. Sinta-se a vontade para
-        visualizar o meu currículo e minhas redes logo abaixo.
+        Olá! Sou Samuel Amaro, desenvolvedor de software especializado em
+        Front-end. Tenho uma paixão por criar interfaces de usuário intuitivas,
+        responsivas e totalmente acessíveis, que garantam um bom desempenho e
+        uma ótima experiência de usuário. Atualmente venho estudando sobre
+        desenvolvimento back-end para expandir minhas habilidades, o que me
+        permite contribuir ainda mais em projetos full-stack. Sinta-se à vontade
+        para visualizar meu currículo e minhas redes logo abaixo.
       </p>
       <ul className={styles.sectionList}>
         <li className={styles.sectionItemList}>

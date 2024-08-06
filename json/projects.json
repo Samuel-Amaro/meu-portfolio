@@ -724,6 +724,57 @@
         "LocalStorage API Web browser"
       ],
       "image": "project49.jpg"
+    },
+    {
+      "id": 50,
+      "name": "Todo Tasks Api",
+      "repository": "https://github.com/Samuel-Amaro/todo-tasks-api",
+      "url": "https://github.com/Samuel-Amaro/todo-tasks-api",
+      "description": "API rest simples de gerenciamento de tarefas, trata-se de um projeto de estudo para adquirir conhecimentos sobre desenvolvimento back-end. A API permitirá realizar operações CRUD (Criar, Ler, Atualizar, Deletar) como, Cadastrar uma nova tarefa, Atualizar o status de uma tarefa, Obter detalhes de uma tarefa, Atualizar uma tarefa, Obter todas as tarefas, Deletar uma tarefa",
+      "tecnologys": [
+        "docker",
+        "TypeScript",
+        "PostGreSQL",
+        "Bun",
+        "API Rest",
+        "Drizzle ORM",
+        "ElysiaJS"
+      ],
+      "image": "api.jpg"
+    },
+    {
+      "id": 51,
+      "name": "Local Library Api",
+      "repository": "https://github.com/Samuel-Amaro/local-library-api",
+      "url": "https://github.com/Samuel-Amaro/local-library-api",
+      "description": "Este projeto tem como objetivo principal o aprendizado e a construção de uma API RESTful para uma biblioteca local, utilizando tecnologias modernas no desenvolvimento back-end. A API permitirá realizar operações CRUD (Criar, Ler, Atualizar, Deletar) para gerenciar autores, livros, instâncias de livros e gêneros literários. Além disso, permitirá obter o catálogo completo da biblioteca.",
+      "tecnologys": [
+        "docker",
+        "TypeScript",
+        "PostGreSQL",
+        "Bun",
+        "API Rest",
+        "Drizzle ORM",
+        "ElysiaJS"
+      ],
+      "image": "api.jpg"
+    },
+    {
+      "id": 52,
+      "name": "Stock Master Api",
+      "repository": "https://github.com/Samuel-Amaro/stock-master-api",
+      "url": "https://github.com/Samuel-Amaro/stock-master-api",
+      "description": "Este projeto visa principal o aprendizado e a construção de uma API RESTful para gerenciamento de entrada e saída de estoque de produtos com controle de acesso, utilizando tecnologias modernas no desenvolvimento back-end. A API permitirá realizar operações CRUD (Criar, Ler, Atualizar, Deletar) para gerenciar produtos, categorias, fornecedores, usuários, movimentações no estoque, além de possui controle de acesso e permissões.",
+      "tecnologys": [
+        "docker",
+        "TypeScript",
+        "PostGreSQL",
+        "Bun",
+        "API Rest",
+        "Drizzle ORM",
+        "ElysiaJS"
+      ],
+      "image": "api.jpg"
     }
   ]
 }
