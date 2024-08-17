@@ -21,14 +21,15 @@ export default function SectionExperience() {
               Cantto
             </a>
           </h4>
-          <p className={styles.sectionExperienceDescription}>
-            Como desenvolvedor front-end na Cantto, tenho a responsabilidade de
-            construir interfaces para o SaaS (Software as a Service) utilizando
-            tecnologias de ponta e práticas de desenvolvimento ágeis.
-          </p>
+          <ul className={styles.sectionExperienceList}>
+            <li>Fui Responsável pela construção de interfaces, incluindo páginas, componentes e integração com APIs de serviços back-end, focando na construção de um SaaS (Software as a Service). Utilizei tecnologias de ponta como <strong>Svelte, SvelteKit, TypeScript, PostCSS, HTML, CSS, além de Git e GitHub Feature Branch Workflow</strong>.</li>
+            <li>Colabororei com designers e desenvolvedores back-end para garantir a entrega de
+            produtos de alta qualidade dentro dos prazos estabelecidos.</li>
+            <li>Contribui com revisões de código, testes e correções de bugs.</li>
+          </ul>
         </article>
         <aside>
-          <p className={styles.sectionExperiencedate}>nov 2023 - o momento</p>
+          <p className={styles.sectionExperiencedate}>Nov/2023 - Ago/2024</p>
         </aside>
       </div>
     </section>

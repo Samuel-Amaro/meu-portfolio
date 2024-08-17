@@ -51,13 +51,7 @@ export default function SectionAbout() {
         · Desenvolvedor Front-End
       </address>
       <p className={styles.sectionDescription}>
-        Olá! Sou Samuel Amaro, desenvolvedor de software especializado em
-        Front-end. Tenho uma paixão por criar interfaces de usuário intuitivas,
-        responsivas e totalmente acessíveis, que garantam um bom desempenho e
-        uma ótima experiência de usuário. Atualmente venho estudando sobre
-        desenvolvimento back-end para expandir minhas habilidades, o que me
-        permite contribuir ainda mais em projetos full-stack. Sinta-se à vontade
-        para visualizar meu currículo e minhas redes logo abaixo.
+        Desenvolvedor de software com  1 ano de experiência profissional em Desenvolvimento Front-end, especializado na criação de interfaces de usuário intuitivas e responsivas utilizando <strong>HTML, CSS, JavaScript/TypeScript e frameworks como SvelteKit e Next.js</strong>. Possuo compreensão dos princípios de <strong>UX/UI</strong> e sou adepto das práticas ágeis de desenvolvimento, <strong>incluindo feature branch, integração contínua (CI), entrega contínua (CD) e GitHub workflow</strong>. Experiência em revisões de código, correções de bugs e aprimoramento de performance. Atualmente, estou expandindo minhas habilidades em Back-end para contribuir de forma mais abrangente em projetos completos. Comprometido com a entrega de soluções de alta qualidade, adoto uma abordagem colaborativa e estou sempre em busca de novas tecnologias para aprimorar a eficiência das entregas e meu desenvolvimento profissional.
       </p>
       <ul className={styles.sectionList}>
         <li className={styles.sectionItemList}>
