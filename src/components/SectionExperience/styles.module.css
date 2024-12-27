@@ -24,7 +24,7 @@
   color: var(--bs-gray-700);
 }
 
-.sectionLink:is(:hover, :focus){
+.sectionLink:is(:hover, :focus) {
   color: var(--choose12);
 }
 
@@ -34,6 +34,12 @@
 
 .sectionExperienceList li {
   margin: 0 0 10px 0;
+}
+
+.sectionExperienceWrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
 }
 
 @media screen and (min-width: 800px) {

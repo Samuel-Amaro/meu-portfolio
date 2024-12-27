@@ -51,7 +51,21 @@ export default function SectionAbout() {
         · Desenvolvedor Front-End
       </address>
       <p className={styles.sectionDescription}>
-        Desenvolvedor de software com  1 ano de experiência profissional em Desenvolvimento Front-end, especializado na criação de interfaces de usuário intuitivas e responsivas utilizando <strong>HTML, CSS, JavaScript/TypeScript e frameworks como SvelteKit e Next.js</strong>. Possuo compreensão dos princípios de <strong>UX/UI</strong> e sou adepto das práticas ágeis de desenvolvimento, <strong>incluindo feature branch, integração contínua (CI), entrega contínua (CD) e GitHub workflow</strong>. Experiência em revisões de código, correções de bugs e aprimoramento de performance. Atualmente, estou expandindo minhas habilidades em Back-end para contribuir de forma mais abrangente em projetos completos. Comprometido com a entrega de soluções de alta qualidade, adoto uma abordagem colaborativa e estou sempre em busca de novas tecnologias para aprimorar a eficiência das entregas e meu desenvolvimento profissional.
+        Desenvolvedor de software com experiência profissional em
+        Desenvolvimento Front-End, especializado na criação de interfaces de
+        usuário modernas, responsivas e acessíveis. Trabalho com tecnologias
+        como <strong>HTML, CSS, JavaScript/TypeScript</strong> e frameworks
+        avançado como <strong>Next.js</strong>. Utilizo práticas ágeis de
+        desenvolvimento, incluindo{" "}
+        <strong>
+          feature branch, integração contínua (CI), entrega contínua (CD) e
+          GitHub Workflow.
+        </strong>{" "}
+        Minha experiência inclui revisão de código, resolução de bugs e
+        otimização de performance. Comprometido em entregar soluções de alta
+        qualidade, sou um profissional colaborativo e motivado, sempre em busca
+        de novas tecnologias e abordagens para impulsionar a eficiência e
+        aprimorar minhas habilidades.
       </p>
       <ul className={styles.sectionList}>
         <li className={styles.sectionItemList}>

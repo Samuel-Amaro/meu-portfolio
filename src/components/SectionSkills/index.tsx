@@ -14,7 +14,7 @@ import {
 import {
   faUniversalAccess,
   faCheck,
-  faDatabase,
+  // faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
 import BemCSS from "../Icons/BemCSS";
 import {
@@ -25,16 +25,16 @@ import {
   SiJest,
   SiTestinglibrary,
   SiSvelte,
-  SiBun,
-  SiPostgresql,
-  SiDocker,
+  // SiBun,
+  // SiPostgresql,
+  // SiDocker,
 } from "react-icons/si";
 import IconSWR from "../Icons/IconSWR";
 import IconCSSModules from "../Icons/CSSModules";
 import ReactHookForm from "../Icons/ReactHookForm";
-import IconVitest from "../Icons/IconVitest";
-import Drizzle from "../Icons/Drizzle";
-import ElysiaJS from "../Icons/ElysiaJS";
+// import IconVitest from "../Icons/IconVitest";
+// import Drizzle from "../Icons/Drizzle";
+// import ElysiaJS from "../Icons/ElysiaJS";
 
 export default function SectionSkills() {
   return (
@@ -177,7 +177,7 @@ export default function SectionSkills() {
           <SiSvelte className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>SvelteKit</span>
         </li>
-        <li className={styles.sectionSkillsToolsItem}>
+        {/* <li className={styles.sectionSkillsToolsItem}>
           <IconVitest className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>Vitest</span>
         </li>
@@ -218,7 +218,7 @@ export default function SectionSkills() {
         <li className={styles.sectionSkillsToolsItem}>
           <ElysiaJS className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>ElysiaJS</span>
-        </li>
+        </li> */}
       </ul>
       <h3 className={`heading4 ${styles.sectionSkillsHeading3}`}>
         Fluxo de trabalho
@@ -284,12 +284,12 @@ export default function SectionSkills() {
             TDD / MVC
           </p>
         </li>
-        <li className={styles.sectionSkillsWorkflowItemList}>
+        {/* <li className={styles.sectionSkillsWorkflowItemList}>
           <p className={styles.sectionSkillsWorkflowItem}>
             <FontAwesomeIcon icon={faCheck} />
             API Rest
           </p>
-        </li>
+        </li> */}
       </ul>
       <h3 className={`heading4 ${styles.sectionSkillsHeading3}`}>
         Soft Skills
