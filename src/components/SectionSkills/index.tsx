@@ -32,6 +32,7 @@ import {
 import IconSWR from "../Icons/IconSWR";
 import IconCSSModules from "../Icons/CSSModules";
 import ReactHookForm from "../Icons/ReactHookForm";
+import Talwind from "../Icons/Talwind";
 // import IconVitest from "../Icons/IconVitest";
 // import Drizzle from "../Icons/Drizzle";
 // import ElysiaJS from "../Icons/ElysiaJS";
@@ -99,28 +100,6 @@ export default function SectionSkills() {
           <span className={styles.sectionSkillsContentText}>React.JS</span>
         </li>
         <li className={styles.sectionSkillsToolsItem}>
-          <FontAwesomeIcon
-            icon={faNpm}
-            className={styles.sectionSkillsIcon}
-            width={48}
-            height={48}
-          />
-          <span className={styles.sectionSkillsContentText}>NPM</span>
-        </li>
-        <li className={styles.sectionSkillsToolsItem}>
-          <BemCSS className={styles.sectionSkillsIcon} />
-          <span className={styles.sectionSkillsContentText}>bem</span>
-        </li>
-        <li className={styles.sectionSkillsToolsItem}>
-          <FontAwesomeIcon
-            icon={faUniversalAccess}
-            className={styles.sectionSkillsIcon}
-            width={48}
-            height={48}
-          />
-          <span className={styles.sectionSkillsContentText}>Acessibility</span>
-        </li>
-        <li className={styles.sectionSkillsToolsItem}>
           <SiReactrouter className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>
             react-router-dom
@@ -129,10 +108,6 @@ export default function SectionSkills() {
         <li className={styles.sectionSkillsToolsItem}>
           <SiTypescript className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>TypeScript</span>
-        </li>
-        <li className={styles.sectionSkillsToolsItem}>
-          <SiVite className={styles.sectionSkillsIcon} />
-          <span className={styles.sectionSkillsContentText}>Vite</span>
         </li>
         <li className={styles.sectionSkillsToolsItem}>
           <FontAwesomeIcon
@@ -144,20 +119,6 @@ export default function SectionSkills() {
         <li className={styles.sectionSkillsToolsItem}>
           <SiNextdotjs className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>Next.JS</span>
-        </li>
-        <li className={styles.sectionSkillsToolsItem}>
-          <IconSWR className={styles.sectionSkillsIcon} />
-          <span className={styles.sectionSkillsContentText}>SWR</span>
-        </li>
-        <li className={styles.sectionSkillsToolsItem}>
-          <IconCSSModules className={styles.sectionSkillsIcon} />
-          <span className={styles.sectionSkillsContentText}>CSS Modules</span>
-        </li>
-        <li className={styles.sectionSkillsToolsItem}>
-          <ReactHookForm className={styles.sectionSkillsIcon} />
-          <span className={styles.sectionSkillsContentText}>
-            React Hook Form
-          </span>
         </li>
         <li className={styles.sectionSkillsToolsItem}>
           <SiJest className={styles.sectionSkillsIcon} />
@@ -176,6 +137,10 @@ export default function SectionSkills() {
         <li className={styles.sectionSkillsToolsItem}>
           <SiSvelte className={styles.sectionSkillsIcon} />
           <span className={styles.sectionSkillsContentText}>SvelteKit</span>
+        </li>
+        <li className={styles.sectionSkillsToolsItem}>
+          <Talwind className={styles.sectionSkillsIcon} />
+          <span className={styles.sectionSkillsContentText}>TailwindCSS</span>
         </li>
         {/* <li className={styles.sectionSkillsToolsItem}>
           <IconVitest className={styles.sectionSkillsIcon} />

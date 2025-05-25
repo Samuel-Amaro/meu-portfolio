@@ -54,8 +54,8 @@ export default function SectionAbout() {
         Desenvolvedor de software com experiência profissional em
         Desenvolvimento Front-End, especializado na criação de interfaces de
         usuário modernas, responsivas e acessíveis. Trabalho com tecnologias
-        como <strong>HTML, CSS, JavaScript/TypeScript</strong> e frameworks
-        avançado como <strong>Next.js</strong>. Utilizo práticas ágeis de
+        como <strong>HTML, CSS, JavaScript/TypeScript</strong> e frameworks como{" "}
+        <strong>SvelteKit, Next.js</strong>. Utilizo práticas ágeis de
         desenvolvimento, incluindo{" "}
         <strong>
           feature branch, integração contínua (CI), entrega contínua (CD) e
@@ -98,7 +98,7 @@ export default function SectionAbout() {
             />
           </Link>
         </li>
-        <li className="social-medias__item">
+        {/* <li className="social-medias__item">
           <Link
             className={styles.sectionItemLink}
             target="_blank"
@@ -109,7 +109,7 @@ export default function SectionAbout() {
           >
             <FrontMentor className={styles.sectionItemLinkIcon} />
           </Link>
-        </li>
+        </li> */}
       </ul>
       {/*<a
         className={styles.sectionBtn}

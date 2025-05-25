@@ -16,8 +16,6 @@ export default function Home() {
       <SectionExperience />
       <LineDiviser />
       <SectionSkills />
-      <LineDiviser />
-      <SectionProjects />
     </main>
   );
 }
